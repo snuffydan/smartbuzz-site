@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartBuzz Support</title>
+  <meta name="description" content="Help and support for SmartBuzz: Charge Alert, Location Alert and Don't Forget for iPhone.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="./"><img src="assets/logo.png" alt=""><span>Smart<span class="buzz">Buzz</span></span></a>
+      <nav>
+        <a href="./" aria-current="page">Support</a>
+        <a href="privacy/">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>How can we help?</h1>
+      <p class="lede">SmartBuzz gives you smart alerts that buzz at the right moment: when your battery reaches your chosen level, when you arrive at or leave a place, and before you head out the door.</p>
+
+      <div class="card">
+        <strong>Contact us</strong>
+        <p style="margin: 6px 0 14px;">Questions, problems or ideas? We'd love to hear from you. Please include your iPhone model and iOS version if something isn't working.</p>
+        <a class="button" href="mailto:smartbuzz.app@gmail.com?subject=SmartBuzz%20support">Email smartbuzz.app@gmail.com</a>
+      </div>
+
+      <h2>Charge Alert</h2>
+      <details>
+        <summary>Why does Charge Alert need the app to stay open?</summary>
+        <p>iOS doesn't let apps check the battery level in the background. Tap <strong>Start Charge Alert</strong> and SmartBuzz shows a dimmed Charging Mode screen that keeps your iPhone awake, so it can alert you at your chosen level. To be alerted with the app closed, set up the Shortcuts automation below.</p>
+      </details>
+      <details>
+        <summary>How do I get the alert with the app closed?</summary>
+        <ol>
+          <li>Open the <strong>Shortcuts</strong> app and tap <strong>Automation</strong>.</li>
+          <li>Tap <strong>New Automation</strong>, then choose <strong>Battery Level</strong>.</li>
+          <li>Choose <strong>Rises Above</strong>, set your level and select <strong>Run Immediately</strong>.</li>
+          <li>Add the <strong>SmartBuzz Charge Alert</strong> action and tap <strong>Done</strong>.</li>
+        </ol>
+        <p>Tip: turn off <strong>Notify When Run</strong> so you only see the SmartBuzz alert.</p>
+      </details>
+      <details>
+        <summary>Why can I only choose levels like 63%, 68% or 73%?</summary>
+        <p>iOS reports the battery level in 5% steps, so alert levels follow the same steps. The highest choice is 98% because 100% isn't always reported accurately.</p>
+      </details>
+
+      <h2>Location Alert and Don't Forget</h2>
+      <details>
+        <summary>Why does SmartBuzz ask for location access “Always”?</summary>
+        <p>So it can alert you when you arrive at or leave a saved place, even when the app is closed. SmartBuzz uses Apple's low-power region monitoring, not constant GPS, and your location never leaves your iPhone. See our <a href="privacy/">Privacy Policy</a>.</p>
+      </details>
+      <details>
+        <summary>My alert arrived a little late. Is that normal?</summary>
+        <p>Yes, a short delay is normal. iOS detects places using Wi-Fi and mobile signal, which are usually accurate to 50–100 m, so alerts typically arrive within a minute or two of crossing the edge of the area. A bigger radius makes alerts earlier and more reliable. Don't Forget reminders arrive once you're outside the area, so for things like the stove, check before you go.</p>
+      </details>
+      <details>
+        <summary>I'm not getting alerts at all</summary>
+        <ul>
+          <li>Settings › SmartBuzz › Location: choose <strong>Always</strong> and turn on <strong>Precise Location</strong>.</li>
+          <li>Settings › SmartBuzz › Notifications: turn on <strong>Allow Notifications</strong> and <strong>Time Sensitive Notifications</strong>.</li>
+          <li>Check that a Focus mode isn't silencing SmartBuzz.</li>
+          <li>Make sure the place or checklist isn't paused, and that today is one of its chosen days.</li>
+          <li>Low Power Mode can delay location alerts slightly.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Is there a limit to how many places I can save?</summary>
+        <p>No. iOS watches up to 20 places at a time for each app, so if you save more than that, SmartBuzz automatically keeps the nearest ones active as you move.</p>
+      </details>
+      <details>
+        <summary>Why is the alert sound quiet when my iPhone is on silent?</summary>
+        <p>When SmartBuzz is open, alerts play even on silent. When it's closed, alerts arrive as notifications, which follow your iPhone's ring/silent switch and Focus settings.</p>
+      </details>
+
+      <h2>Your data</h2>
+      <details>
+        <summary>Do I need an account? Is my data backed up?</summary>
+        <p>No account is needed, and everything stays on your iPhone. Your iPhone's own iCloud or computer backup includes SmartBuzz data. Optional sign-in and sync may come in a future update.</p>
+      </details>
+      <details>
+        <summary>How do I delete my data?</summary>
+        <p>Delete places and checklists in the app, or delete the app to remove everything. We don't hold any copy of your data.</p>
+      </details>
+    </main>
+
+    <footer class="site">
+      © 2026 SmartBuzz · <a href="./">Support</a> · <a href="privacy/">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a>
+    </footer>
+  </div>
+</body>
+</html>
